@@ -50,7 +50,7 @@ config :phoenix, :plug_init_mode, :runtime
 # Configure your database
 config :distance_tracker, DistanceTracker.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "",
   database: "distance_tracker_dev",
   hostname: "localhost",
   pool_size: 10

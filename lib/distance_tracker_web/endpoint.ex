@@ -1,10 +1,6 @@
 defmodule DistanceTrackerWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :distance_tracker
 
-  socket "/socket", DistanceTrackerWeb.UserSocket,
-    websocket: true,
-    longpoll: false
-
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phx.digest
@@ -13,7 +9,7 @@ defmodule DistanceTrackerWeb.Endpoint do
     at: "/",
     from: :distance_tracker,
     gzip: false,
-    only: ~w(css fonts images js favicon.ico robots.txt)
+    only: ~w()
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
